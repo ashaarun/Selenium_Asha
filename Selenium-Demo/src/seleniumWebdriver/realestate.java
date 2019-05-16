@@ -11,6 +11,7 @@ public class realestate {
 		System.setProperty("webdriver.gecko.driver", "C:\\Users\\AshaArun\\Documents\\geckodriver-v0.24.0-win64\\geckodriver.exe");
 		WebDriver driver=new FirefoxDriver();
 		driver.get("http://realestate.upskills.in/wp-admin/");
+		Thread.sleep(2000);
 		driver.findElement(By.xpath("//input[@id='user_login']")).sendKeys("Admin");
 		driver.findElement(By.xpath("//input[@id='user_pass']")).sendKeys("admin@123");
 		driver.findElement(By.xpath("//input[@type='submit']")).click();
