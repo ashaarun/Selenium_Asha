@@ -6,8 +6,18 @@ import java.util.ArrayList;
 public class Test1 {
 
 	public static void main(String [] args) {
-	   int price = 500;
-	   String range = (price < 500)?"low":(price < 1000)?"medium":"high";
-	   System.out.println(range);
+		try{
+			  int i = Integer.parseInt("xy");
+			  System.out.println(i);
+			 }catch(RuntimeException e){
+			  System.out.print("c");
+			 }catch(NumberFormatException e){
+			  System.out.print("a");
+			 }catch(ArithmeticException e){
+			  System.out.print("b");
+			 }finally{
+			  System.out.print("d");
+			 }
+
 }
 }

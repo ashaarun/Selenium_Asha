@@ -23,7 +23,7 @@ public class demo7 {
 		driver.findElement(By.name("password")).sendKeys("admin@123");
 		
 		//by css
-		driver.findElement(By.cssSelector("button.btn.btn-primary")).click;
+		//driver.findElement(By.cssSelector("button.btn.btn-primary")).click;
 		//by xpath
 		//driver.findElement(By.xpath("//*[@class='btn btn-primary' and type='submit']")).click();
 		WebElement link=driver.findElement(By.id("menu-catalog"));

@@ -26,7 +26,7 @@ public class demo6 {
 
 		act.sendKeys("ENTER");
 
-		button.sendKeys(Keys.TAB,Keys.TAB,Keys.TAB,Keys.ENTER).perform();
+		act.sendKeys(Keys.TAB,Keys.TAB,Keys.TAB,Keys.ENTER).perform();
 		
 	}
 

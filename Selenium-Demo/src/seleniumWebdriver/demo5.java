@@ -14,6 +14,8 @@ public class demo5 {
 		// TODO Auto-generated method stub
 		System.setProperty("webdriver.gecko.driver", "C:\\Users\\AshaArun\\Documents\\geckodriver-v0.24.0-win64\\geckodriver.exe");
 		WebDriver driver=new FirefoxDriver();
+		driver.manage().window().maximize();
+		
 		driver.get("http://newtours.demoaut.com/");
 		driver.manage().window().maximize();
 		WebElement link=driver.findElement(By.linkText("Car Rentals"));
